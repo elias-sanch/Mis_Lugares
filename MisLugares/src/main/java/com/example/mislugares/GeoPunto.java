@@ -3,11 +3,11 @@ package com.example.mislugares;
 import java.util.Objects;
 
 public class GeoPunto {
-    private double longitud, latitud;
+    protected double longitud, latitud;
 
     static public GeoPunto SIN_POSICION = new GeoPunto(0.0, 0.0);
 
-    public GeoPunto(Double longitud, double latitud) {
+    public GeoPunto(double longitud, double latitud) {
         this.longitud = longitud;
         this.latitud = latitud;
     }
