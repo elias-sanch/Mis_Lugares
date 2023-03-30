@@ -12,12 +12,17 @@ public class GeoPunto {
         this.latitud = latitud;
     }
 
+    public GeoPunto(int longitud, int latitud) {
+        this.longitud = longitud * 1E6;
+        this.latitud = latitud * 1E6;
+    }
+
     @Override
     public String toString() {
-        return new String("GeoPunto{" +
+        return "GeoPunto {" +
                 "longitud=" + longitud +
                 ", latitud=" + latitud +
-                '}');
+                '}';
     }
 
     @Override
