@@ -24,4 +24,13 @@ public class GeoPuntoAlt extends GeoPunto {
         else
             return d;
     }
+
+    public double getAltitud() {
+        return altitud;
+    }
+
+    public void setAltitud(double altitud) {
+        this.altitud = altitud;
+    }
+
 }
